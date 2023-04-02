@@ -1,3 +1,77 @@
-h1 {
-    color: red;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
+  color: rgb(54, 54, 54);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#clock-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(42, 165, 136);
+}
+
+
+.light-mode {
+  border-color: black !important;
+  background-color: rgb(79, 216, 186) !important;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black ;
+  margin: 10px 100px;
+  width: 210px;
+  height: 200px;
+  border-color: rgb(79, 216, 186);
+  border-radius: 20%;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.time {
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabled {
+  background-color: rgb(204, 204, 204);
+  cursor: not-allowed;
 }

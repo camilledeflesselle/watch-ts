@@ -1,5 +1,5 @@
-import './index.css';
-import { MyClass } from './example-unit';
+import "./index.css";
+import { App } from "./application";
 
-const a = new MyClass(2);
-console.log('number is', a.get());
+const app = new App();
+app.start();
